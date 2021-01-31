@@ -82,4 +82,4 @@ if os.environ.get("APP_LOCATION") == "heroku":
         server="gunicorn",
         workers=3, )
 else:
-    app.run(host='127.0.0.1', port=8080, debug=True)
+    app.run(host='localhost', port=8080, debug=True)
